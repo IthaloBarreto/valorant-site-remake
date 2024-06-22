@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__imgs">
+            <img id="img-riot" src="./img/riotgames-logo.png" alt="Logo riot games">
+            <img id="img-valorant" src="./img/valorant-logo.png" alt="Logo valorant">
+        </div>
+        <nav class="cabecalho__menu">
+            <div class="container__info-game">
+                <label for="game__info" id="game__info-menu">INFORMAÇÕES DO JOGO <i class="bi bi-caret-down-fill"></i>
+                </label>
+                <select id="game__info"></select>
+                <ul id="list__info-game">
+                    <li id="game__info-item"> <a id="agentes-link" href="#">AGENTES</a> </li>
+                    <li id="game__info-item"> <a id="mapas-link" href="#">MAPAS</a> </li>
+                    <li id="game__info-item"> <a id="arsenal-link" href="#">ARSENAL</a> </li>
+                    <li id="game__info-item"> <a id="premier-link" href="#">PREMIER</a> </li>
+                </ul>
+            </div>
+            <a id="midia" href="#">MÍDIA</a>
+            <a id="noticias" href="#">NOTÍCIAS</a>
+            <a id="placar" href="#">PLACAR</a>
+            <div id="container__suport">
+                <label for="suport" id="suport-menu">SUPORTE <i class="bi bi-caret-down-fill"></i> </label>
+                <select id="suport"></select>
+                <ul id="list__suport">
+                    <li id="suport__item"> <a id="requisits-link" href="#">REQUISITOS</a> </li>
+                    <li id="suport__item"> <a id="suport-link" href="#">SUPORTE <i class="bi bi-arrow-up-right"></i>
+                        </a></li>
+                    <li id="suport__item"> <a id="cod-link" href="#">Código da <span>comunidade</span></a> </li>
+                </ul>
+            </div>
+            <div class="container__social">
+                <label for="social" id="social-menu">SOCIAL <i class="bi bi-caret-down-fill"></i> </label>
+                <select id="social"></select>
+                <ul id="list__social">
+                    <li id="social-item"><a id="facebook-link"
+                            href="https://www.facebook.com/VALORANTbrasil/">Facebook<i id="img-arrow"
+                                class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="social-item"><a id="youtube-link"
+                            href="https://www.youtube.com/channel/UCgWiuB2PQIUhJgEN9No281g">Youtube<i id="img-arrow"
+                                class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="social-item"><a id="instagram-link"
+                            href="https://www.instagram.com/valorantbrasil">Instagram<i id="img-arrow"
+                                class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="social-item"><a id="twitter-link" href="https://x.com/valorantbrasil">Twitter<i
+                                id="img-arrow" class="bi bi-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <a id="sports" href="#">ESPORTS <i class="bi bi-arrow-up-right"></i> </a>
+            <div id="container__comunit">
+                <label for="comunit" id="comunit-menu">COMUNIDADE <i class="bi bi-caret-down-fill"></i> </label>
+                <select id="comunit"></select>
+                <ul id="list__comunit">
+                    <li id="comunit-item"><a id="discord-link" href="https://www.discord.com">Discord <i id="img-arrow"
+                                class="bi bi-arrow-up-right"></i> </a></li>
+                    <li id="comunit-item"><a id="forum-link" href="#">Fórum<i id="img-arrow"
+                                class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="comunit-item"><a id="facebook__group-link" href="#">Grupo do <span>facebook</span><i
+                                id="img-arrow" class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="comunit-item"><a id="tournaments-link" href="#">Torneios da <span>comunidade</span><i
+                                id="img-arrow" class="bi bi-arrow-up-right"></i></a></li>
+                    <li id="comunit-item"><a id="program-link" href="#">Programa De <span>Apoio A Torneios</span>
+                            <span>De Comunidade</span><i id="img-arrow" class="bi bi-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="right__side-header">
+            <div class="btn-search">
+                <button id="search">
+                    <i id="search-btn" class="bi bi-search"></i>
+                    <input id="search-bar" class="search-bar">
+                    <i id="close-btn" class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div id="languages" class="languages">
+                <i id="language-img" class="bi bi-globe2"></i>
+            </div>
+            <div id="play__now" class="play__now">
+                <a href="#" id="btn__play-now">JOGUE AGORA</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container__trailer">
+            <video autoplay muted loop class="trailer" src="./video/trailer-valorant.mp4"></video>
+            <div class="call__to-action">
+                <h2>Um jogo de tiro tático 5x5 com personagens originais</h2>
+                <img src="./img/name-valorant__logo.png" alt="name valorant logo">
+                <div class="play-free">
+                    <a class="btn__play-free" href="#">JOGUE GRÁTIS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container__last-notices">
+            <div class="last-notices">
+                <div class="title-notices">
+                    <h2>ÚLTIMAS NOTíCIAS</h2>
+                    <a href="#">IR PARA A PÁGINA DE NOTÍCIAS <i class="bi bi-box-arrow-in-down-right"></i></a>
+                </div>
+                <div class="notices">
+
+                    <div class="first-notice">
+                        <img src="./img/notice-one.png" alt="noticia um">
+                        <p class="paragrafo-notice"><b>DEV</b> | mês passado</p>
+                        <h3>Rotação de mapas, replay e muito mais // Atualização Dev</h3>
+                        <p class="call__paragraph">Oi! Quanto tempo! Vamos bater um papo.</p>
+                    </div>
+
+                    <div class="second-notice">
+                        <img src="./img/comunit-tournaments.png" alt="noticia dois">
+                        <p class="paragrafo-notice"><b>COMUNIDADE</b> | há 2 anos</p>
+                        <h3>Torneios de comunidade - 17/06 a 23/06</h3>
+                        <p class="call__paragraph">Participe de torneios criados pela própia comunidade.</p>
+                    </div>
+
+                    <div class="third-notice">
+                        <img src="./img/iso.png" alt="noticia tres">
+                        <p class="paragrafo-notice"><b>ESPORTS</b> | mês passado</p>
+                        <h3>Pura adrenalina // Animação do VALORANT Masters Shanghai</h3>
+                        <p class="call__paragraph notice-three">O VALORANT será pura adrenalina no Masters Shanghai! As
+                            12 melhores equipes mostrarão o que significa competir na fase internacional, com os Pontos
+                            de Campeonato em jogo!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container__valorant-console">
+            <img src="./img/valorant-console.png" alt="console lançamento">
+        </section>
+
+        <section class="container__we-are-valorant">
+            <div class="description">
+                <h2>NÓS SOMOS VALORANT</h2>
+                <p class="call__action">DESAFIE SEUS LIMITES</p>
+                <P class="description__paragraph">Misture o seu estilo e experiência em um cenário global e competitivo.
+                    Você terá 13 rodadas para atacar e defender com disparos certeiros e habilidades táticas. Com apenas
+                    uma vida por rodada, você deve pensar mais rápido que o oponente se quiser sobreviver. Encare
+                    inimigos nos modos Competitivo e Sem Ranque, além da Disputa da Spike e do Mata-Mata!</P>
+                <a class="conheça__game-btn" href="#">CONHEÇA O JOGO</a>
+            </div>
+            <video class="trailer__dois" autoplay muted loop width="728px" src="./video/trailer-dois.mp4">
+        </section>
+
+        <section class="container__agents">
+            <img src="./img/yoru-valorant-stealth-agent-pc-g.png" alt="background img">
+            <div class="agents-text">
+                <div class="agents">
+                    <h2>SEUS AGENTES</h2>
+                    <p class="paragraph-one">A CRIATIVIDADE É SUA MELHOR ARMA.</p>
+                    <p class="paragraph-two">Mais do que armas e munição, VALORANT inclui agentes com habilidades<br>
+                        adaptativas, rápidas e letais, que criam oportunidades para você exibir sua mecânica<br>
+                        de tiro. Cada Agente é único, assim como os momentos de destaque de cada partida!</p>
+                    <a href="#">VER TODOS OS AGENTES</a>
+                </div>
+                <div class="agents funcoes">
+                    <h2>FUNCÕES</h2>
+                    <p class="paragraph-one">VEJA AS FUNÇÕES DOS AGENTES</p>
+
+                    <p class="duel">
+                        <b>Duelista:</b> Esses agentes são focados em confrontos diretos e em eliminar inimigos.<br>
+                        Suas habilidades são projetadas para ajudá-los a entrar rapidamente em combate, causar danos<br>
+                        e sair ileso, se possível.<br>
+                    </p>
+
+                    <p class="controler"><b>Controlador:</b> Os agentes dessa classe são especialistas em controlar o
+                        campo de batalha. Eles têm<br>
+                        habilidades que permitem bloquear visão dos inimigos, criar obstáculos para controlar o
+                        fluxo<br>
+                        do jogo e fornecer informações valiosas para a equipe.<br></p>
+
+                    <p class="sentinel"><b>Sentinela:</b> Agentes sentinela são defensivos por natureza, focados em
+                        proteger a equipe e manter o<br>
+                        controle sobre áreas-chave do mapa. Suas habilidades incluem a capacidade de colocar
+                        dispositivos<br>
+                        que alertam sobre a presença inimiga e protegem áreas importantes.<br></p>
+
+                    <p class="iniciador"><b>Iniciador:</b> Esses agentes são responsáveis por abrir caminho para a
+                        equipe avançar. Suas habilidades<br>
+                        são voltadas para revelar a localização dos inimigos, desestabilizar as defesas adversárias e
+                        criar<br>
+                        oportunidades para ataques bem-sucedidos.<br></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container__mapa">
+            <div class="description-mapa">
+                <h2>SEUS MAPAS</h2>
+                <p class="call__action-mapa">BATALHE AO REDOR DO MUNDO</p>
+                <P class="description__paragraph-mapa">Cada mapa serve como um palco para mostrar sua criatividade. Os
+                    mapas são feitos sob medida para estratégias de equipe, jogadas espetaculares e momentos
+                    eletrizantes. Faça as jogadas que todo mundo vai tentar imitar no futuro!</P>
+                <a class="conheça__game-btn-mapa" href="#">VER TODOS OS MAPAS</a>
+            </div>
+            <img class="trailer__dois-mapa" width="728px" src="./img/mapa.png" alt="">
+        </section>
+    </main>
+    <footer class="container-rodape">
+        <ul class="list-options">
+            <li class="options-item"><a class="download__game-link" href="#">BAIXE O JOGO</a></li>
+            <li class="options-item"><a class="tournaments__independent-link" href="#">TORNEIO INDEPENDENTE</a></li>
+            <li class="options-item"><a class="download__app-link" href="#">BAIXE O APLICATIVO DE CELULAR RIOT
+                    MOBILE</a></li>
+        </ul>
+        <div class="rodape">
+            <ul class="rodape__list-redes">
+                <li class="redes-item"><a class="rede-link" href="https://www.facebook.com/VALORANTbrasil/"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1280px-Facebook_f_logo_%282019%29.svg.png"
+                            alt=""></a></li>
+                <li class="redes-item"><a class="rede-link"
+                        href="https://www.youtube.com/channel/UCgWiuB2PQIUhJgEN9No281g"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt=""></a></li>
+                <li class="redes-item"><a class="rede-link" href="https://www.instagram.com/valorantbrasil"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
+                            alt=""></a></li>
+                <li class="redes-item"><a class="rede-link" href="https://x.com/valorantbrasil"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                            alt=""></a></li>
+                <li class="redes-item"><a class="rede-link" href="https://discord.com/invite/valorant-br"><img
+                            src="https://static.vecteezy.com/system/resources/previews/023/741/147/non_2x/discord-logo-icon-social-media-icon-free-png.png"
+                            alt=""></a></li>
+            </ul>
+            <div class="logos-footer">
+                <img class="img-logo riot-logo" src="./img/riotgames-logo.png" alt="">
+                <img class="img-logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png"
+                    alt="">
+            </div>
+            <p>© 2020-2024 Riot Games, Inc. RIOT GAMES, VALORANT e todos os logotipos associados são marcas
+                comerciais,<br>
+                marcas de serviço e/ou marcas registradas da Riot Games, Inc.</p>
+            <ul class="list-termos">
+                <li class="termos-item"><a class="termos-link" href="#">POLÍTICIA DE PRIVACIDADE</a></li>
+                <li class="termos-item"><a class="termos-link" href="#">TERMOS DE SERVIÇO</a></li>
+                <li class="termos-item"><a class="termos-link" href="#">PREFERÊNCIAS DE COOKIES</a></li>
+            </ul>
+            <div class="idade-img">
+                <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt84ae391429f2375a/5f2db8f41967337e7590c9a8/riot-seloclassind-14-val.png?&height=100&disable=upscale"alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="./archive.js/search.js" defer></script>
+    <script src="./archive.js/infogamelist.js" defer></script>
+</body>
+
+</html>

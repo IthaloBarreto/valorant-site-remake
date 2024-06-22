@@ -1,0 +1,67 @@
+.container__we-are-valorant {
+    padding: 5em 12em;
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 8em;
+}
+
+.trailer__dois {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+
+.description h2 {
+    flex-wrap: wrap;
+    margin-right: 6em;
+    letter-spacing: -5px;
+    line-height: 120px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    font-size: 130px;
+    color: rgb(15, 25, 35);
+    margin-bottom: 35px;
+}
+
+.call__action {
+    font-family: var(--fonte-roboto);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.description__paragraph {
+    flex-wrap: wrap;
+    margin-right: 46em;
+    font-family: var(--fonte-roboto);
+    font-weight: 400;
+    color: black;
+    font-size: 17px;
+    margin-bottom: 80px;
+}
+
+.conheça__game-btn {
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--fonte-roboto);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(255, 70, 85);
+    padding: 1.4rem 1.8rem;
+}
+
+.conheça__game-btn:hover {
+    color: #fff;
+    background-color: rgb(15, 25, 35);
+    transition: background 0.3s;
+}
+
+.mapa {
+    position: absolute;
+    top: 130%;
+}
+
+.paragrafo-mapa {
+    flex-wrap: wrap;
+    margin-right: 55em;
+}

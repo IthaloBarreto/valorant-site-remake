@@ -1,0 +1,4 @@
+.container__valorant-console img {
+    clip-path: inset(0 0 20px 0);
+    width: 100vw;
+}

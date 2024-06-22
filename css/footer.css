@@ -1,0 +1,109 @@
+.list-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #565656;
+    padding: 1.7em;
+}
+
+.options-item {
+    list-style-type: none;
+}
+
+.download__game-link,
+.tournaments__independent-link,
+.download__app-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    letter-spacing: -0.2px; 
+}
+
+.rodape {
+    background-color: rgb(19, 19, 19);
+    padding-top: 35px;
+}
+
+.rodape__list-redes {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.redes-item {
+    list-style-type: none;
+}
+
+.rede-link {
+    text-align: center;
+    background-color: #565656;
+    padding: 7px;
+    border-radius: 50% 50%;
+}
+
+.rede-link img {
+    filter: grayscale(50);
+    width: 16px;
+}
+
+.img-logo {
+    width: 100px;
+    filter:  grayscale(1) invert() brightness(100);
+}
+
+.riot-logo {
+    filter: grayscale(1) brightness(2);
+    width: 120px;
+    margin-right: 30px;
+}
+
+.logos-footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.rodape p {
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: var(--fonte-roboto);
+    font-weight: 400;
+    font-size: 14px;
+    color: #c9c9c9;
+    margin-bottom: 40px;
+}
+
+.list-termos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.termos-item {
+    list-style-type: none;
+}
+
+.termos-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    letter-spacing: -0.2px; 
+    padding: 0.3em 0.7em;
+}
+
+.termos-link:hover {
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+.idade-img {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.idade-img img {
+    background-color: #585858;
+    padding: 0.7em;
+    border-radius: 10px;
+}

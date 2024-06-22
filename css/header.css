@@ -1,0 +1,391 @@
+.cabecalho {
+    padding: 1rem 2rem;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.cabecalho__imgs {
+    white-space: nowrap;
+}
+
+#img-riot {
+    width: 90px;
+    height: 25px;
+    filter: grayscale(1) invert() brightness(100);
+    margin-right: 1.3rem;
+}
+
+#img-valorant {
+    width: 30px;
+    filter: grayscale(1) invert() brightness(100);
+}
+
+#sports i {
+    color: #aaa9a9;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 40px;
+    margin-left: 3rem;
+    align-items: center;
+    width: 76%;
+    white-space: nowrap;
+}
+
+#game__info-menu, #suport-menu, #social-menu, #comunit-menu, #noticias, #midia, #placar, #sports {
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 0.5em 1em; /* Adiciona padding para todos os estados */
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    z-index: 1; /* Garante que o texto fique acima do pseudo-elemento */
+}
+
+#game__info-menu:hover, #suport-menu:hover, #social-menu:hover, #comunit-menu:hover, #noticias:hover, #midia:hover, #placar:hover, #sports:hover {
+    color: rgb(196, 74, 74);;
+}
+
+#game__info-menu::before, #suport-menu::before, #social-menu::before, #comunit-menu::before, #noticias::before, #midia::before, #placar::before, #sports::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+#game__info-menu:hover::before, #suport-menu:hover::before, #social-menu:hover::before, #comunit-menu:hover::before, #noticias:hover::before, #midia:hover::before, #placar:hover::before, #sports:hover::before {
+    background-color: #363636;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#game__info-menu::after, #suport-menu::after, #social-menu::after, #comunit-menu::after, #noticias::after, #midia::after, #placar::after, #sports::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* 10px abaixo do elemento */
+    left: 0;
+    right: 0;
+    height: 3px; /* Altura da borda */
+    background-color: rgb(196, 74, 74);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+#game__info-menu:hover::after, #suport-menu:hover::after, #social-menu:hover::after, #comunit-menu:hover::after, #noticias:hover::after, #midia:hover::after, #placar:hover::after, #sports:hover::after {
+    opacity: 1;
+}
+
+a i {
+    font-size: 11px;
+    color: #c9c9c9;
+}
+
+select {
+    display: none;
+}
+
+label i {
+    color: #707070;
+    font-size: 11px;
+}
+
+#search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #363636;
+    border: none;
+    border-radius: 12px;
+    padding: 0.7em 0.8em;
+    cursor: pointer;
+}
+
+#search-btn {
+    transform: scaleX(-1);
+    font-size: 21px;
+    color: #fff;
+}
+
+.search-bar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    color: #fff;
+    font-size: 16px;
+    transition: width ease 0.7s;
+}
+
+.search-bar.visible {
+    width: 200px;
+}
+
+#close-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+    color: #7a7a7a;
+    margin-left: 10px;
+}
+
+#close-btn.active-close {
+    display: inline;
+}
+
+.right__side-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#language-img {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#btn__play-now {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    padding: 0.2em 1em;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+}
+
+#img-arrow {
+    color: #6e6e6e;
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+#comunit-item i {
+    color: #6e6e6e;
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+/*LISTA DE INFORMAÇÕES DO JOGO*/
+
+.container__info-game {
+    position: relative;
+}
+
+#list__info-game {
+    top: 33px;
+    background-color: #363636;
+    list-style-type: none;
+    position: absolute;
+    padding: 2em 1em 2em 1.2em;
+    display: none;
+}
+
+#game__info-item {
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 0.3em 0.7em;
+    text-decoration: none;
+}
+
+#game__info-item:hover {
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+#agentes-link,
+#mapas-link,
+#arsenal-link,
+#premier-link {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#list__info-game.active__game-list-info {
+    display: block;
+}
+
+
+
+
+
+
+/*LISTA DE SUPORTE*/
+
+#container__suport {
+    position: relative;
+}
+
+#list__suport {
+    top: 33px;
+    background-color: #363636;
+    list-style-type: none;
+    position: absolute;
+    padding: 2em 1em 2em 1.2em;
+    display: none;
+    box-sizing: border-box;
+}
+
+#suport-link,
+#requisits-link,
+#cod-link{
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.3em 0.7em;
+}
+
+#cod-link {
+    display: inline-block;
+}
+
+#cod-link span {
+    display: block;
+}
+
+#suport-link:hover,
+#requisits-link:hover,
+#cod-link:hover {
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+#suport__item {
+    margin-bottom: 20px;
+}
+
+#list__suport.active__list-suport {
+    display: block;
+}
+
+
+
+
+
+
+/*LIST SOCIAL*/
+
+.container__social {
+    position: relative;
+}
+
+#list__social {
+    top: 33px;
+    background-color: #363636;
+    list-style-type: none;
+    position: absolute;
+    padding: 2em 1em 2em 1.2em;
+    display: none;
+    box-sizing: border-box;
+}
+
+#social-item {
+    margin-bottom: 20px;
+}
+
+#facebook-link,
+#youtube-link,
+#instagram-link,
+#twitter-link {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.3em 0.7em;
+}
+
+#facebook-link:hover,
+#youtube-link:hover,
+#instagram-link:hover,
+#twitter-link:hover {
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+#list__social.active__list-social {
+    display: block;
+}
+
+
+
+
+
+/*LIST COMUNIT*/
+
+#container__comunit{
+    position: relative;
+}
+
+#list__comunit {
+    top: 33px;
+    background-color: #363636;
+    list-style-type: none;
+    position: absolute;
+    padding: 2em 1em 2em 1.2em;
+    display: none;
+    box-sizing: border-box;
+}
+
+#comunit-item {
+    margin-bottom: 20px;
+}
+
+#facebook__group-link,
+#discord-link,
+#tournaments-link,
+#program-link,
+#forum-link {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.3em 0.7em;
+}
+
+#facebook__group-link:hover,
+#discord-link:hover,
+#tournaments-link:hover,
+#program-link:hover,
+#forum-link:hover {
+    background-color: #585858;
+    border-radius: 8px;
+}
+
+#list__comunit.active__list-comunit {
+    display: block;
+}

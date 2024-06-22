@@ -1,0 +1,114 @@
+.container__last-notices {
+    padding: 0 12em 0 11em;
+    margin-bottom: 4em;
+    box-sizing: border-box;
+}
+
+.title-notices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.title-notices h2 {
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+.title-notices a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-family: var(--fonte-roboto);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.title-notices a i {
+    color: rgb(255, 70, 85);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.notices {
+    display: flex;
+    justify-content: space-between;
+    gap: 49px;
+}
+
+.paragrafo-notice {
+    margin: 16px 0;
+    font-family: var(--fonte-roboto);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.first-notice {
+    width: 485px;
+}
+
+.first-notice b {
+    color: rgb(255, 70, 85);
+}
+
+.first-notice h3 {
+    flex-wrap: wrap;
+    margin-right: 8em;
+    font-family: var(--fonte-roboto);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.paragrafo-notice {
+    margin: 18px 0;
+    font-family: var(--fonte-roboto);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.second-notice b {
+    color: rgb(255, 70, 85);
+}
+
+.second-notice h3 {
+    font-family: var(--fonte-roboto);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.paragrafo-notice {
+    margin: 18px 0;
+    font-family: var(--fonte-roboto);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.third-notice b {
+    color: rgb(255, 70, 85);
+}
+
+.third-notice h3 {
+    flex-wrap: wrap;
+    margin-right: 8em;
+    font-family: var(--fonte-roboto);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.call__paragraph {
+    font-family: var(--fonte-roboto);
+    color: #474343;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.notice-three {
+    flex-wrap: wrap;
+    margin-right: 3em;
+}
